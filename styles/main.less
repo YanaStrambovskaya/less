@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'normalize.less';
 .main{
 	height: 1200px;
@@ -22,3 +23,60 @@
 	}
 
 }
+=======
+@import 'normalize';
+
+body{
+	background: #ff718f;
+}
+.wrapper{
+	max-width: 1000px;
+	width: 100%;
+	margin: 50px auto 0;
+	div.row{
+		overflow: hidden;
+		@media (min-width: 992px){
+			margin: 0 -15px;
+		}
+		div{
+			position: relative;
+			padding-bottom: 20%;
+			background: #19d8ff;
+			box-sizing: border-box;
+			float: left;
+			height: 1px;
+			&:nth-child(2n){
+				background: #a572ff;
+				span{
+					color: #19d8ff
+				}
+			}
+			span{
+				display: block;
+				font-family: arial;
+				font-size: 500%;
+				color: #a572ff;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			@media (min-width: 992px){
+				width: 20%;
+			}
+			@media(max-width: 991px){
+				width: 33.32%;
+				padding-bottom: 33.32%;
+			}
+			@media(max-width: 500px){
+				width: 50%;
+				padding-bottom: 50%;
+			}
+			@media(max-width: 320px){
+				width: 100%;
+				padding-bottom: 100%;
+			}
+		}
+	}
+}
+>>>>>>> 089fe6d38e47c51ee8f500141b1fef0a7dd6227b
